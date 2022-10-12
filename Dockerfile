@@ -4,4 +4,4 @@ RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
 WORKDIR /inetpub/wwwroot
 
-COPY C:/data/jenkins_home/workspace/ASPNETPipeline1/JenkinsDemo1/ .
+COPY ${JENKINS_HOME}/workspace/${JOB_NAME}/JenkinsDemo1/ .
