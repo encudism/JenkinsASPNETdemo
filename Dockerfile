@@ -4,4 +4,4 @@ RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
 WORKDIR /inetpub/wwwroot
 
-COPY JenkinsDemo1 /inetpub/wwwroot/
+ADD jenkins_publish/* /inetpub/wwwroot/
